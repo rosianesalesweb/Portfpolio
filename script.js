@@ -17,15 +17,16 @@ if (nome === ""|| email === "" || msg === "") {
  
 formulario.addEventListener('submit', validarFormulario);
 
+
     const btnTema = document.querySelector('#btn-tema');
     const body = document.body;
 
         function alternarTema() {
        body.classList.toggle('dark-theme');
 
-       //Altera o texto do botão conforme o tema
+       
         if (body.classList.contains('dark-theme')) {
-            btnTema.innerText = "☀";
+            btnTema.innerText = "☀️";
             } else {
                 btnTema.innerText = "🌙";
             }
@@ -36,17 +37,17 @@ formulario.addEventListener('submit', validarFormulario);
             {
                 título: "Projeto 01 - Cine Top",
                 descriçao: "Site que mostra a lista dos filmes mais assistidos do momento com uma breve descrição de cada um.",
-                link: "https://github.com/rosianesalesweb"
+                link: "https://github.com/rosianesalesweb/Portfpolio-html-css-js"
             },
             {
                 título: "Projeto 02 - Portfólio",
                 descriçao: "Meu portfólio de apresentação feito com HTML, CSS e JavaScript.",
-                link: "https://github.com/rosianesalesweb"
+                link: "  https://github.com/rosianesalesweb/Portfpolio-html-css-js"
             },
             {
                 título:"Projeto 03 - Boutique de Mimos (Moda e Beleza)",
                 descriçao: " Uma vitrine virtual ficticia de perfumes, maquiagens e acessórios femininos, para praticar o visual de uma loja online.",
-                link:"https://github.com/rosianesalesweb"    
+                link:"  https://github.com/rosianesalesweb/Portfpolio-html-css-js"    
             }
             ];
 
@@ -61,7 +62,7 @@ formulario.addEventListener('submit', validarFormulario);
                     <article class="card-projeto">
                     <h3>${projeto.título}</h3>
                     <p>${projeto.descriçao}</p>
-                    <a href="${projeto.link}" target="_blank">Ver no gitHub</a>
+                    <a href="${projeto.link}" target="_blank">Ver no GitHub</a>
                     </article>
                     `;
                     container.innerHTML += cardHTML;
